@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('#image1').click(function(){
+      window.open("chords.html","_blank");
+    })
+
+    $('#image2').click(function(){
+      window.open("tabs.html","_blank");
+    })
+
+    $('#image3').click(function(){
+    window.open("lyrics.html","_blank");
+    })
+
+    $('#grid1').on({
+      mouseenter:function () {
+        $(this).css("background-color","rgb(47, 3, 3)").animate({lineHeight:"40px"},500)
+      },
+      mouseleave:function () {
+        $(this).css("background-color","black").animate({lineHeight:"20px"},500)
+      }
+    })
+
+    $('#grid2').on({
+      mouseenter:function () {
+        $(this).css("background-color","rgb(47, 3, 3)").animate({lineHeight:"40px"},500)
+      },
+      mouseleave:function () {
+        $(this).css("background-color","black").animate({lineHeight:"20px"},500)
+      }
+    })
+
+    $('#grid3').on({
+      mouseenter:function () {
+        $(this).css("background-color","rgb(47, 3, 3)").animate({lineHeight:"40px"},500)
+      },
+      mouseleave:function () {
+        $(this).css("background-color","black").animate({lineHeight:"20px"},500)
+      }
+    })
+
+    $('#image4').on({
+      mouseenter:function () {
+        $(this).animate({marginTop:'45px'},500).animate({marginTop:'-10px'},500);
+      },
+      mouseleave:function () {
+        $(this).animate({marginTop:'45px'},500).animate({marginTop:'-10px'},500);
+      }
+    })
+
+      });
+  </script>
+  <link rel = "stylesheet" href = "style.css">
+  <title>FirstJQuery</title>
+</head>
+<body>
+  <nav id="nav"class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Make Some Noise</a>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#firstCrousel">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About Guitar</a>
+                </li>
+                <li>
+                    <a href="#chord">Chords</a>
+                </li>
+
+                <li>
+                    <a href="#info">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-right">
+              <li>
+                <form class="navbar-form navbar-left">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                      <button class="btn btn-default">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+     <header id="firstCrousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+           <li data-target="#firstCrousel" data-slide-to="0" class="active"></li>
+           <li data-target="#firstCrousel" data-slide-to="1"></li>
+           <li data-target="#firstCrousel" data-slide-to="2"></li>
+           <li data-target="#firstCrousel" data-slide-to="3"></li>
+           <li data-target="#firstCrousel" data-slide-to="4"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+           <div class="item active">
+              <img src="image1.jpg" alt="no image" style="height:100%;"class="fill">
+              <div class="carousel-caption">
+                <h1>Music is Life!!</h1>
+              </div>
+            </div>
+           <div class="item">
+              <img src="image2.jpg" alt="no image" style="height:100%;" class="fill">
+              <div class="carousel-caption">
+                <h1>Just make a move Today!!</h1>
+              </div>
+           </div>
+           <div class="item">
+              <img src="image3.jpg" alt="no image" style="height:100%;" class="fill">
+              <div class="carousel-caption">
+                <h1>All you need is just Passion!!</h1>
+              </div>
+           </div>
+           <div class="item">
+              <img src="image4.jpg" alt="no image" style="height:100%;" class="fill">
+              <div class="carousel-caption">
+                <h1>Passion to Learn and Be a Rockstar!!</h1>
+              </div>
+           </div>
+           <div class="item">
+              <img src="image5.jpg" alt="no image" style="height:100%;" class="fill">
+              <div class="carousel-caption">
+                <h1>So Let's Start And Make Some Noise!!</h1>
+              </div>
+           </div>
+        </div>
+        <a class="left carousel-control" href="#firstCrousel" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+
+          </a>
+          <a class="right carousel-control" href="#firstCrousel" role="button" data-slide="next">
+                <span class="icon-next" aria-hidden="true"></span>
+
+          </a>
+        </header>
+        <div style="margin-top:40px; margin-right:30px;"class="container">
+          <div class="row">
+            <div id="grid1" class="col-sm-4"  data-toggle="tooltip" title="Get Some Chods!!">
+      <img  id="image1"src="image10.jpg" alt="no image" class="radius">
+      <h1>Song's chords!</h1>
+      <p>To play them you need some bacis knowledge of finger positions and diffrence between major and minor chords.</p>
+    </div>
+    <div id="grid2" class="col-sm-4" data-toggle="tooltip" title="Get Some Songs Tab Notation!!">
+      <img id="image2" class="radius" src="image13.jpg" alt="no image">
+      <h1>Song's Notations!</h1>
+      <p>To play them you need some basic knowledge of tab notations i.e. E,B,G,D,A,E or A#,C#,D#,F#,G#</p>
+    </div>
+    <div id="grid3" class="col-sm-4">
+      <img id="image3" class="radius" src="image12.jpg" alt="no image" data-toggle="tooltip" title="Get Some Songs Lyrics!! ">
+      <h1>Song's Lyrics!</h1>
+        <p>These are lyrics of ramdome songs, and you can also search for a particular song.</p>
+    </div>
+        </div>
+      </div>
+      <div id="about"class="container margin">
+        <strong>About Guitar</strong>
+        <p>
+          The type of guitar that you choose will depend on the style of music that
+          you wish to play on your instrument. It does not really matter if you decide
+          to learn to play on the electric or acoustic, it is really up to you, but one
+          consideration to make is if you wish to play both styles of guitar, it is
+          probably best to start with an acoustic steel string guitar. Playing this type
+          of guitar will strengthen your fingers as you press down on the strings to
+          make chord shapes. Pressing down strings on the electric guitar is easier and
+          requires less finger strength, so if you wish to play both types of guitar,
+          start with the acoustic.
+        </p>
+
+        <p>
+          The guitar is a musical instrument classified as a string instrument with anywhere
+          from four to 18 strings, usually having six. The sound is projected either acoustically,
+          using a hollow wooden or plastic and wood box (for an acoustic guitar), or through electrical
+          amplifier and a speaker (for an electric guitar). It is typically played by strumming or
+          plucking the strings with the fingers, thumb and/or fingernails of the right hand or with a pick
+          while fretting (or pressing against the frets) the strings with the fingers of the left hand.
+          The guitar is a type of chordophone, traditionally constructed from wood and strung with either
+          gut, nylon or steel strings and distinguished from other chordophones by its construction and tuning.
+          The modern guitar was preceded by the gittern, the vihuela, the four-course Renaissance guitar, and the
+          five-course baroque guitar, all of which contributed to the development of the modern six-string instrument.
+        </p>
+
+        <p>
+          Electro-acoustic guitars are the halfway house between the acoustic and the electric guitar.
+          In most cases the electro-acoustic guitar looks the same as the steel stringed acoustic,
+          the key difference is that the electro-acoustic can be plugged into an amplifier. Electro-acoustic
+          guitars are fitted with an electronic device that captures the vibration of the strings allowing
+          the guitar�s sound to be amplified. This device is called a pickup. The pickup means that the guitarist
+          has greater freedom to move around than if a microphone was pointed at an acoustic only guitar.
+          If you are planning to perform your music in public an electro-acoustic could be a good choice.
+          Electro-acoustic guitars are usually more expensive than regular steel string guitars.
+        </p>
+        <div id="chord"class="margin">
+            <strong>Chords</strong>
+          <p>
+            In music, a guitar chord is a set of notes played on a guitar. A chord's notes are often played
+            simultaneously, but they can be played sequentially in an arpeggio.The implementation of guitar
+            chords depends on the guitar tuning. Most guitars used in popular music have six strings with the
+            "standard" tuning of the Spanish classical-guitar, namely E-A-D-G-B-E' (from the lowest pitched
+            string to the highest); in standard tuning, the intervals present among adjacent strings are
+            perfect fourths except for the major third (G,B). Standard tuning requires four chord-shapes for the major triads.
+          </p>
+          <h3>Some Major Chords</h3>
+          <img id="image4"class="radius"src="chordchart.jpg" alt="No image">
+        </div>
+        <div id="info"class="margin">
+          <strong>Contact Us</strong>
+          <h3>Name:Nitin Aggarwal</h3>
+          <h3>Phno:9999950386</h3>
+          <ul  class=" list-inline social">
+            <li style="background-color:#3b5998">
+                <i class="fa fa-facebook"></i>
+            </li >
+            <li style="background-color:#55acee">
+              <i class="fa fa-twitter"></i>
+            </li>
+            <li style="background-color:#dd4b39">
+              <i class="fa fa-google-plus"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+</body>
+</html>

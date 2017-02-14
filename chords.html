@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('#song1').click(function () {
+      $('#p2').hide('slow',function () {
+        $('#p1').show('slow');
+      })
+    })
+
+    $('#song2').click(function () {
+      $('#p1').hide('slow',function () {
+        $('#p2').show('slow')
+      })
+    })
+
+    $('#img3').on({
+      mouseenter:function () {
+        $(this).animate({marginTop:'45px'},500).animate({marginTop:'-10px'},500);
+      },
+      mouseleave:function () {
+        $(this).animate({marginTop:'45px'},500).animate({marginTop:'-10px'},500);
+      }
+    })
+
+  });
+</script>
+  <link rel = "stylesheet" href = "style-2.css">
+  <title>Chords</title>
+</head>
+<body>
+
+  <nav id="nav"class="navbar navbar-inverse " role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Make Some Noise</a>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="main.html">Home</a>
+                </li>
+                <li>
+                    <a href="#popular">Popular chords</a>
+                </li>
+            </ul>
+            <ul class="navbar-right">
+              <li>
+                <form class="navbar-form navbar-left">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                      <button id="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <div id="chord"class="margin container">
+      <strong>Chords</strong>
+    <p style="display:block">
+      In music, a guitar chord is a set of notes played on a guitar. A chord's notes are often played
+      simultaneously, but they can be played sequentially in an arpeggio.The implementation of guitar
+      chords depends on the guitar tuning. Most guitars used in popular music have six strings with the
+      "standard" tuning of the Spanish classical-guitar, namely E-A-D-G-B-E' (from the lowest pitched
+      string to the highest); in standard tuning, the intervals present among adjacent strings are
+      perfect fourths except for the major third (G,B). Standard tuning requires four chord-shapes for the major triads.
+    </p>
+    <h3>Some Major Chords</h3>
+    <img id="img3"class="radius"src="MajorChords.gif" alt="No image">
+
+    <div id="popular"class="margin">
+        <strong>Popular Song's chords</strong>
+      <h1 id="song1">Milne hai mujhse aai Song(Ashqui-2 Movie)</h1>
+
+      <p id="p1">
+
+        intro:<br>
+
+a..2.2.2.2.2.2.2..2/5.5.5..5/7..7.7.7.7<br>
+e......................................<br>
+
+a..2.2.2.2.2.2.2..2/5.5.5..4.2.0......<br>
+e.................................3.2.<br>
+
+
+Right after the intro, we have simple chords in the verse<br>
+like
+  (Bm)           (A)           (G) <br>
+e---2---     e-------    e---3---<br>
+b---3---     b---2---    b---0---<br>
+g---4---     g---2---    g---0---<br>
+d---4---     d---2---    d---0---<br>
+a---2---     a---0---    a---2---<br>
+e-------     e---0---    e---3---<br>
+
+   (F#) <br>
+e---2---<br>
+b---2---<br>
+g---3---<br>
+d---4---<br>
+a---4---<br>
+e---2---<br>
+
+
+The F# or the barre chords can be tricky for beginners<br>
+to get a hold so you people can play the alternate <br>
+version, i,e by avoiding the 6th E thickest string<br>
+and playing only the first 4 - 5 strings of a barre chord.<br>
+Strumming pattern for this song can be  (ddd ud ud ud) <br>
+<br>
+ (Bm) Milne hai mujhse aayi<br>
+ (A) Phir jaane kyun tanhaayi<br>
+ (G) Kis mod pe hai laayi aashi (F#) qui<br>
+ (Bm) Khud se hai ya khuda se<br>
+ (A) Is pal meri ladayi<br>
+ (G) Kis mod pe hai laayi aashi (F#) qui<br>
+<br>
+ (Bm)   (A)   (G)   (F#) <br>
+<br>
+ (A) Aashiqui baazi hai taash  (Bm) ki..<br>
+toot (A) te bante vishwaas  (G) ki<br>
+
+ (Bm) Jaane kyun main  (A) Sochta hoon<br>
+ (G) Khali sa main  (F#) Ek raasta hoon<br>
+ (Bm) Tune mujhe Kahin  (A) kho diya hai<br>
+ (G) Ya main khud  (F#) Lapata hoon<br>
+<br>
+ (A) aa dhund le tu phir mu (Em) jhe.<br>
+ (A) Kasmein bhi doon toh kya tu (Em) jhe<br>.
+<br>
+      </p>
+
+    </div>
+
+    <div class="margin">
+      <h1 id="song2">Bin Tere Song(I hate Love Story Movie)</h1>
+      <p id="p2">
+        [C] [Cmaj7] [Fmaj7]……….. (Repeat 2 Times) (Instrumental) <br>
+
+[C] [Em] [Cmaj7] [G]…………………… (Repeat 2 Times) (oooo o ooooooooo Voice Goes Here)  <br>
+
+ <br>
+Teri Ni[Cmaj7]gahon ke <br>
+Teri hi [Fmaj7]raahon ke <br>
+Ka[G]reeb se gai zin[C]dagi  <br>
+
+ <br>
+Tujhe kyun [Cmaj7]dekha na <br>
+Tujhe kyun [Fmaj7]jana na <br>
+Shi[G]kayatein karun ya na[C]hi <br>
+
+ <br>
+Tha[Am]mi hai yeh saasein <br>
+Bha[Em]ri hai yeh aanhkein <br>
+Sa[Fmaj7]hu kaise abb yeh fas[G]laaaa  <br>
+ <br>
+
+[C]Bin Tere Bin Te[Em]re Bin Te[Fmaj7]reeee <br>
+Koi kha[G]lish hai hawaon mein <br>
+Bin Te[C]re  <br>
+
+ <br>
+Bin Tere Bin Te[Em]re Bin Te[Fmaj7]reeee <br>
+Koi kha[G]lish hai hawaon mein <br>
+Bin Te[C]re  <br>
+
+ <br> <br>
+Kuch ba[C]cha hi na[Em]hi darmi[Fmaj7]yaan <br>
+Saaans le[G]ti hai abb yeh doori[C]yann <br>
+Dil na[C]hi jan[Em]ta raahon [Fmaj7]mein <br>
+Haath [G]se haath chuthe the [C]kahan <br>
+Kyun Na[C]zar ke kinaare Tutte [Fmaj7]hai khwaab saaare <br>
+Tu ba[G]ta  <br>
+
+ <br>
+Suna [C]suna sama hai <br>
+Khali [Fmaj7]khali jahan hai aab me[G]ra  <br>
+ <br>
+
+[C]Bin Tere Bin Te[Em]re Bin Te[Fmaj7]reeee <br>
+Koi kha[G]lish hai hawaon mein <br>
+Bin Te[C]re  <br>
+
+ <br>
+o [C]Bin Tere Bin Te[Em]re Bin Te[Fmaj7]reeee <br>
+Koi kha[G]lish hai hawaon mein <br>
+Bin Te[C]re... <br>
+
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

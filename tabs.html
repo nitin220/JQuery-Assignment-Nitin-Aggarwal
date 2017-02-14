@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('#song3').click(function () {
+      $('#p4').hide('slow',function () {
+        $('#p3').show('slow');
+      })
+    })
+
+    $('#song4').click(function () {
+      $('#p3').hide('slow',function () {
+        $('#p4').show('slow')
+      })
+    })
+
+    $('#img2').on({
+      mouseenter:function () {
+        $(this).animate({marginTop:'45px'},500).animate({marginTop:'-10px'},500);
+      },
+      mouseleave:function () {
+        $(this).animate({marginTop:'45px'},500).animate({marginTop:'-10px'},500);
+      }
+    })
+
+  });
+</script>
+  <link rel = "stylesheet" href = "style-2.css">
+  <title>Notations</title>
+</head>
+<body>
+  <nav id="nav"class="navbar navbar-inverse " role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Make Some Noise</a>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="main.html">Home</a>
+                </li>
+                <li>
+                    <a href="#populart">Popular Notations</a>
+                </li>
+            </ul>
+            <ul class="navbar-right">
+              <li>
+                <form class="navbar-form navbar-left">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                      <button id="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div id="chord"class="margin container">
+      <strong>Notations</strong>
+      <h1>How to Read Tab</h1>
+      <p style="display:block">
+        Guitar tab or tablature is a very popular method of notating guitar music.
+        What makes tab so popular is that, once you get the hang of it, it is very easy to read.
+        In order to understand tab, you need to visualize a guitar neck as if you are playing the guitar
+        and looking down on the neck. Tab consists of 6 horizontal lines that represent the strings of the guitar.
+        The thickest string being the bottom most line and the thinnest string being the topmost.
+        Numbers are then placed on these lines to represent finger positions on the guitar fret board.
+        If you read the diagram below you would play this on a guitar by putting your finger just behind
+        the 2nd fret on the 5th string, then you would play the note at the 4th fret, then again on the 2nd fret.
+        The ‘zero’ represents playing an open string. As musical notes this would read as follows B C# B A.
+      </p>
+      <img id="img2"src="images.jpg" alt="noimage" class="radius">
+      <div id="populart"class="margin">
+        <strong>Popular Song's Notations</strong>
+        <h1 id="song3">Baten Kuch Unkahi si(Life in a Metro Movie)</h1>
+        <p id="p3">
+          B|-1-1-0-1-0------<br>
+          G|-----------2-2--<br>
+          Baatein Kuch Ankahee Si<br>
+            <br>
+          G|-0-2-0-----------0-<br>
+          D|-------3-3–3-2-3---<br>
+          Kuchh Ansuni Si Hone Lagi<br><br>
+
+          B|-1-1-0-1-0------<br>
+          G|-----------2-2--<br>
+          Kaabu Dil Pe Raha Na<br><br>
+
+          G|-0-2-0-----------0-<br>
+          D|-------3-3–3-2-3---<br>
+          Hasti Hamaari Khone Lagi<br>
+
+          E|-0-----0-1--0--0--0--0-----0-1-<br>
+          B|---1-3-----------3--3---1-3----<br>
+          Wo Wo O O O O O...<br><br>
+
+          E|-0-0---0------<br>
+          B|-----3----3-1-<br>
+          Shaayad Yahi Hai Pyaar...<br><br>
+
+          Rest Is Same...<br>
+        </p>
+      </div>
+
+        <div class="margin">
+          <h1 id="song4">Pal(ham rahe ya na rahe kal)</h1>
+          <p id="p4">
+            B|————0-0———–<br>
+            G|-1—1-2——–2-1-2–<br>
+            Hum, rahen ya na rahen kal<br><br>
+
+            B|———-2-2-0—–0–<br>
+            G|-2-2-2———-2——<br>
+            Kal yaad aayenge ke ye pal<br>
+
+            B|—————0-0———–<br>
+            G|-1——1-2——–2-1-2–<br>
+            D|—2————————-<br>
+            Pal, ye hain pyar ke pal<br><br>
+
+            B|———-2-2-0—–0–<br>
+            G|-2-2-2———-2——<br>
+            Chal, aa mere sang chal<br><br>
+
+            E|-0—–2————0—–<br>
+            B|—-4—–0—2-4——–<br>
+            G|————————2–<br>
+            Chal, soche kya Chhoti si<br><br>
+
+            B|—-0-2—–0–<br>
+            G|-2——-2—–<br>
+            hai zindagi<br><br>
+
+            E|-0—–2————0—–<br>
+            B|—-4—–0—2-4——–<br>
+            G|————————2–<br>
+            Kal, mil jaaye to hogi<br><br>
+
+            B|—-0-2—–0–<br>
+            G|-2——-2—–<br>
+            khush naseebi<br><br>
+
+            B|———–0-0——0—-0————<br>
+            G|-1—1-2——2-1—-1—-2-1——<br>
+            D|————————————2–<br>
+            Hum rahen ya na rahen yaad aayenge ye pal<br>
+
+            E|————0————-0–<br>
+            B|-4-4-4-4—–4-4-4-4—–<br>
+            Shaam ka aanchal, odh ke aayee<br><br>
+
+            B|-2-2-2-2-0-2-4-0-<br>
+            dekho woh raat suhani<br>
+
+            E|————0————-0–<br>
+            B|-4-4-4-4—–4-4-4-4—–<br>
+            Aa likh dein hum dono milke <br><br>
+
+            B|-2-2-2-2-0-2-4-0-<br>
+            Apni ye prem kahani<br>
+
+            B|———–0-0——0—-0————<br>
+            G|-1—1-2——2-1—-1—-2-1——<br>
+            D|————————————2–<br>
+            Hum rahen ya na rahen yaad aayenge ye pal...<br><br>
+
+            Rest Is Same...<br>
+          </p>
+        </div>
+    </div>
+
+</body>
+</html>
